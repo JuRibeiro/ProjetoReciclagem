@@ -26,7 +26,7 @@ public class Metal extends Materiais{
 		@Override
 		public void Destinacao ()
 		{
-			System.out.println(""); //PI
+			System.out.println("Material Metalico. Destino: Lumavale Recuperação de Metais"); //PI
 		}
 		
 		

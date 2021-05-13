@@ -26,7 +26,7 @@ public class Vidro extends Materiais
 	@Override
 	public void Destinacao ()
 	{
-		System.out.println(""); //MG
+		System.out.println("Material Vidro. Destino: Massfix Comércio de Sucata de Vidros"); //MG
 	}
 
 }
