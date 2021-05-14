@@ -47,8 +47,7 @@ public class ProgramaTeste {
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,metal.Reciclagem());
 			metal.Destinacao();
 		}
-		
-		if(op == '2')
+		else if(op == '2')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
 			papel.setPeso(papel.getPeso() + leia.nextDouble());
@@ -56,8 +55,7 @@ public class ProgramaTeste {
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,papel.Reciclagem());
 			papel.Destinacao();
 		}
-		
-		if(op == '3')
+		else if(op == '3')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
 			plastico.setPeso(plastico.getPeso() +leia.nextDouble());
@@ -65,8 +63,7 @@ public class ProgramaTeste {
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,plastico.Reciclagem());
 			plastico.Destinacao();
 		}
-		
-		if(op == '4')
+		else if(op == '4')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
 			vidro.setPeso(vidro.getPeso() + leia.nextDouble());
@@ -74,17 +71,20 @@ public class ProgramaTeste {
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,vidro.Reciclagem());
 			vidro.Destinacao();
 		}
-		if(op == '5') {
+		else if(op == '5') {
 			break;
+		}else {
+			System.out.println("Opção não é valida, favor inserir outro número");
 		}
 		
 		
 		System.out.println("\nDeseja reciclar mais materiais? 1-Sim | 2-Não");
 		continuar = (leia.next().charAt(0)=='1'); // ele pega o valor inserido e analisa se é igual a 1, caso seja continuar recebe true.
+		
 		}while(continuar);
 		
 		
-		pontosFinais = metal.Reciclagem() + papel.Reciclagem() + metal.Reciclagem() + vidro.Reciclagem();
+		pontosFinais = metal.Reciclagem() + papel.Reciclagem() + plastico.Reciclagem() + vidro.Reciclagem();
 		System.out.printf("CENTRAL DE RECICLAGEM - PontosPelaTerra\n");
 
 		System.out.printf("Material: Metal\t\tPeso: %.2f\t Valor: %.2f\n", metal.getPeso(),metal.Reciclagem());
@@ -96,5 +96,5 @@ public class ProgramaTeste {
 		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
 		System.out.println("\n\nObrigado pela contribuição!! O planeta agradeçe!");
 
-
+	}	
 }
