@@ -96,5 +96,5 @@ public class ProgramaTeste {
 		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
 		System.out.println("\n\nObrigado pela contribuição!! O planeta agradeçe!");
 
-
+	}
 }
