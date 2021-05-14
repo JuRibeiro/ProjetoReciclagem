@@ -24,10 +24,8 @@ public class ProgramaTeste {
 		Metal metal = new Metal();
 		Plastico plastico = new Plastico();
 		
-		//Papel papel = new Papel(10, 0.14);
-		//System.out.print(papel.Reciclagem());
 		
-		List<Materiais>  material = new ArrayList<>();
+		//List<Materiais>  material = new ArrayList<>();
 		
 		
 		System.out.println("PONTOS PELA TERRA");
@@ -86,12 +84,12 @@ public class ProgramaTeste {
 		
 		pontosFinais = metal.Reciclagem() + papel.Reciclagem() + metal.Reciclagem() + vidro.Reciclagem();
 		System.out.printf("CENTRAL DE RECICLAGEM - PontosPelaTerra\n");
-		System.out.printf("Matrial: Metal\tPeso: %.2f\t Valor: %.2f\n", metal.getPeso(),metal.Reciclagem());
-		System.out.printf("Matrial: Palpel\tPeso: %.2f\t Valor: %.2f\n", papel.getPeso(),papel.Reciclagem());
+		System.out.printf("Matrial: Metal\t\tPeso: %.2f\t Valor: %.2f\n", metal.getPeso(),metal.Reciclagem());
+		System.out.printf("Matrial: Palpel\t\tPeso: %.2f\t Valor: %.2f\n", papel.getPeso(),papel.Reciclagem());
 		System.out.printf("Matrial: Plastico\tPeso: %.2f\t Valor: %.2f\n", plastico.getPeso(),plastico.Reciclagem());
-		System.out.printf("Matrial: Vidro\tPeso: %.2f\t Valor: %.2f\n", vidro.getPeso(),vidro.Reciclagem());
+		System.out.printf("Matrial: Vidro\t\tPeso: %.2f\t Valor: %.2f\n", vidro.getPeso(),vidro.Reciclagem());
 		System.out.printf("Você ganha 1 ponto para cada 100 reais reciclados.\n");
-		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
+		System.out.printf("Sua pontuação: %.0f \n",(pontosFinais/100));
 		System.out.println("Obrigado pela contribuição!!");
 		
 	}
