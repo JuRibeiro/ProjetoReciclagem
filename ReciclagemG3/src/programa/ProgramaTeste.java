@@ -24,10 +24,8 @@ public class ProgramaTeste {
 		Metal metal = new Metal();
 		Plastico plastico = new Plastico();
 		
-		//Papel papel = new Papel(10, 0.14);
-		//System.out.print(papel.Reciclagem());
 		
-		List<Materiais>  material = new ArrayList<>();
+		//List<Materiais>  material = new ArrayList<>();
 		
 		
 		System.out.println("PONTOS PELA TERRA");
@@ -98,5 +96,5 @@ public class ProgramaTeste {
 		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
 		System.out.println("\n\nObrigado pela contribuição!! O planeta agradeçe!");
 
-	}
+
 }
