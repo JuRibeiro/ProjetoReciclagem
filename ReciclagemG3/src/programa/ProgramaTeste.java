@@ -38,7 +38,7 @@ public class ProgramaTeste {
 		System.out.println("Bem vindo ao centro de coleta do PontosPelaTerra");
 		
 		do {
-		System.out.print("Escolha o material que deseja reciclar : \n1-Metal\n2-Papel\n3-Plastico\n4-Vidro\n");
+		System.out.print("Escolha o material que deseja reciclar : \n1-Metal\n2-Papel\n3-Plastico\n4-Vidro\n5-Finalizar\n");
 		op = leia.next().charAt(0);
 		
 		if(op == '1')
@@ -76,7 +76,9 @@ public class ProgramaTeste {
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,vidro.Reciclagem());
 			vidro.Destinacao();
 		}
-		
+		if(op == '5') {
+			break;
+		}
 		
 		
 		System.out.println("\nDeseja reciclar mais materiais? 1-Sim | 2-Não");
@@ -86,6 +88,7 @@ public class ProgramaTeste {
 		
 		pontosFinais = metal.Reciclagem() + papel.Reciclagem() + metal.Reciclagem() + vidro.Reciclagem();
 		System.out.printf("CENTRAL DE RECICLAGEM - PontosPelaTerra\n");
+
 		System.out.printf("Material: Metal\t\tPeso: %.2f\t Valor: %.2f\n", metal.getPeso(),metal.Reciclagem());
 		System.out.printf("Material: Papel\t\tPeso: %.2f\t Valor: %.2f\n", papel.getPeso(),papel.Reciclagem());
 		System.out.printf("Material: Plastico\tPeso: %.2f\t Valor: %.2f\n", plastico.getPeso(),plastico.Reciclagem());
@@ -94,6 +97,6 @@ public class ProgramaTeste {
 		System.out.printf("Valor total de reciclagem: %.1f\n",(pontosFinais));
 		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
 		System.out.println("\n\nObrigado pela contribuição!! O planeta agradeçe!");
-		
+
 	}
 }
