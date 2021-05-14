@@ -44,7 +44,7 @@ public class ProgramaTeste {
 		if(op == '1')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
-			metal.setPeso(leia.nextDouble());
+			metal.setPeso(metal.getPeso() + leia.nextDouble());
 			
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,metal.Reciclagem());
 			metal.Destinacao();
@@ -53,7 +53,7 @@ public class ProgramaTeste {
 		if(op == '2')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
-			papel.setPeso(leia.nextDouble());
+			papel.setPeso(papel.getPeso() + leia.nextDouble());
 			
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,papel.Reciclagem());
 			papel.Destinacao();
@@ -62,7 +62,7 @@ public class ProgramaTeste {
 		if(op == '3')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
-			plastico.setPeso(leia.nextDouble());
+			plastico.setPeso(plastico.getPeso() +leia.nextDouble());
 			
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,plastico.Reciclagem());
 			plastico.Destinacao();
@@ -71,7 +71,7 @@ public class ProgramaTeste {
 		if(op == '4')
 		{
 			System.out.println("Informe o peso do material que deseja reciclar (em kg): ");
-			vidro.setPeso(leia.nextDouble());
+			vidro.setPeso(vidro.getPeso() + leia.nextDouble());
 			
 			System.out.printf("Seus pontos em reais acumulados é: %.2f\n" ,vidro.Reciclagem());
 			vidro.Destinacao();
@@ -85,7 +85,13 @@ public class ProgramaTeste {
 		
 		
 		pontosFinais = metal.Reciclagem() + papel.Reciclagem() + metal.Reciclagem() + vidro.Reciclagem();
-		
+		System.out.printf("CENTRAL DE RECICLAGEM - PontosPelaTerra\n");
+		System.out.printf("Matrial: Metal\tPeso: %.2f\t Valor: %.2f\n", metal.getPeso(),metal.Reciclagem());
+		System.out.printf("Matrial: Palpel\tPeso: %.2f\t Valor: %.2f\n", papel.getPeso(),papel.Reciclagem());
+		System.out.printf("Matrial: Plastico\tPeso: %.2f\t Valor: %.2f\n", plastico.getPeso(),plastico.Reciclagem());
+		System.out.printf("Matrial: Vidro\tPeso: %.2f\t Valor: %.2f\n", vidro.getPeso(),vidro.Reciclagem());
+		System.out.printf("Você ganha 1 ponto para cada 100 reais reciclados.\n");
+		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
 		System.out.println("Obrigado pela contribuição!!");
 		
 	}
