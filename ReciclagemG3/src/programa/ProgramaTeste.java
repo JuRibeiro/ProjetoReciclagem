@@ -94,7 +94,7 @@ public class ProgramaTeste {
 		System.out.printf("\nVocê ganha 1 ponto para cada 100 reais reciclados.\n");
 		System.out.printf("Valor total de reciclagem: %.1f\n",(pontosFinais));
 		System.out.printf("Sua pontuação: %.0f",(pontosFinais/100));
-		System.out.println("\n\nObrigado pela contribuição!! O planeta agradeçe!");
+		System.out.println("\n\nObrigado pela contribuição!! O planeta agradece!");
 
 	}	
 }
