@@ -2,13 +2,6 @@ package classes;
 
 public class Plastico extends Materiais{
 
-	public Plastico(double peso, double valorMaterial, double creditoUsuario, String nomeMaterial) {
-		super(peso, valorMaterial, creditoUsuario, nomeMaterial);
-	}
-
-	public Plastico(double peso, double valorMaterial) {
-		super(peso, valorMaterial);
-	}
 	
 	//metodo
 	@Override

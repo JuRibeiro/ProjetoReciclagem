@@ -9,23 +9,6 @@ public abstract class Materiais
 	private double creditoUsuario;
 	private String nomeMaterial;
 
-	//construtores
-	public Materiais (double peso, double valorMaterial, double creditoUsuario, String nomeMaterial)
-	{
-		super();
-		this.peso = peso;
-		this.valorMaterial = valorMaterial;
-		this.creditoUsuario = creditoUsuario;
-		this.nomeMaterial = nomeMaterial;
-	}
-	
-	//sobrecarga de construtor
-	public Materiais(double peso, double valorMaterial) 
-	{
-		super();
-		this.peso = peso;
-		this.valorMaterial = valorMaterial;
-	}
 	
 	//encapsulamento 
 

@@ -3,15 +3,6 @@ package classes;
 public class Vidro extends Materiais
 {
 
-	public Vidro(double peso, double valorMaterial, double creditoUsuario, String nomeMaterial) {
-		super(peso, valorMaterial, creditoUsuario, nomeMaterial);
-		// TODO Auto-generated constructor stub
-	}
-
-	public Vidro(double peso, double valorMaterial) {
-		super(peso, valorMaterial);
-		// TODO Auto-generated constructor stub
-	}
 	//metodo
 	@Override
 	public double Reciclagem ()
